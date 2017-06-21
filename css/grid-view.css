@@ -1,0 +1,16 @@
+.card-image {
+    text-align: center;
+}
+
+.card-image>i {
+    margin: auto;
+}
+
+.card-content {
+    padding: 16px !important;
+    text-align: center;
+}
+
+#grid-container {
+    padding-top: 16px;
+}

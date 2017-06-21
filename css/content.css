@@ -1,0 +1,149 @@
+body {
+    font-family: 'Arial', sans-serif !important;
+    /*background-color: #fafbfc !important;*/
+    min-width: 705px;
+}
+
+table {
+    table-layout: fixed;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #e74c3c;
+    border-top: 0px;
+    /* Emerald: #2ecc71
+       Sun flower: #f1c40f
+       Orange: #f39c12
+       Alizarin: #e74c3c
+       Amethyst: #9b59b6
+       Lynch: #6C7A89
+       Asphalt: #34495e */
+}
+
+nav {
+    width: 100% !important;
+}
+
+.nav-wrapper, #content-container {
+    max-width: 992px;
+    margin: auto;
+}
+
+#directory-bar>.nav-wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+@media only screen and (max-width: 800px) {
+    nav .logo, #nav-mobile {
+        display: none;
+    }
+}
+
+.logo {
+    font-size: 50px !important;
+    margin-left: 16px;
+}
+
+.nav-icon {
+    height: 64px;
+}
+
+tr {
+    border-radius: 4px;
+}
+
+tr>td>a>div.tooltipped>i.fa {
+    vertical-align: middle;
+    margin-right: 16px;
+}
+
+th, td {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    text-align: left !important;
+}
+
+td:nth-child(2) {
+    text-align: right !important;
+}
+
+.fa-grid {
+    font-size: 6em !important;
+    padding: 16px;
+}
+
+/* Search bar */
+div.nav-wrapper>form {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+div.nav-wrapper>form i {
+    height: 48px;
+    line-height: 48px;
+}
+
+@media only screen and (max-width: 601px) {
+    div.nav-wrapper>form i {
+    height: 40px;
+    line-height: 40px;
+    }
+}
+
+form>div.input-field>input#search {
+    border-radius: 4px !important;
+}
+
+form>div.input-field>input#search:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transition: background .55s ease;
+}
+
+form>div.input-field>input#search:focus, form>div.input-field>input#search:active {
+    background: rgba(255, 255, 255, 1);
+}
+
+/* Breadcrumb */
+span.breadcrumb-text1 {
+    padding: 4px;
+}
+
+span.breadcrumb-text2 {
+    padding: 4px;
+}
+
+span.breadcrumb-text1:hover {
+    color: white;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: background .55s ease;
+}
+
+span.breadcrumb-text2:hover {
+    color: black;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: background .55s ease;
+}
+
+.breadcrumb-arrow1::before {
+    color: #E4F1FE;
+}
+
+.breadcrumb-arrow2::before {
+    color: #6C7A89;
+}
+
+#optionModal {
+    transform: translateY(50%) !important;
+}
+
+#breadcrumbs {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

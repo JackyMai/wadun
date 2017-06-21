@@ -1,0 +1,51 @@
+{
+	"manifest_version": 2,
+	"name": "Wadun",
+	"version": "1.0",
+	"description": "A Google Chrome based file explorer",
+	"icons": {
+		"128": "icon/icon_128.png",
+		"48": "icon/icon_48.png",
+		"16": "icon/icon_16.png"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"file:///*/", 
+				"ftp://*/*"
+				],
+			"js": [
+				"lib/jquery-3.2.1.min.js",
+				"lib/materialize.min.js",
+				"js/file-type.js",
+				"js/content.js",
+				"js/table-column.js",
+				"js/grid-view.js",
+				"js/material-box.js",
+				"js/bookmark.js",
+				"js/filter.js", 
+				"js/options.js", 
+				"js/themes.js"
+				],
+			"css": [
+				"lib/materialize.min.css",
+				"lib/font-awesome.min.css",
+				"css/content.css",
+				"css/table-column.css",
+				"css/grid-view.css",
+				"css/bookmark.css"
+				],
+			"run_at": "document_end"
+		}
+	],
+	"permissions": [
+		"tabs",
+		"file:///*/",
+		"ftp://*/*",
+		"storage"
+	],
+	"web_accessible_resources": [
+		"fonts/*",
+		"icon/*"
+	]
+}
