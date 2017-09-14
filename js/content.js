@@ -180,14 +180,8 @@ function addTruncate(element) {
 
 // Hides the parent directory row from table since breadcrumb provides more functionality
 function hideParentDirFromTable() {
-    // Retrieving row for parent directory
-    var parentDirRow = document.getElementById('tbody').getElementsByTagName('tr')[0];
-    var td = parentDirRow.getElementsByTagName('td')[0];
-
-    // Hiding row for parent directory
-    if(td.getAttribute('data-value') == '..') {
-        parentDirRow.style.display = 'none';
-    }
+    var parentDirLinkBox = document.getElementById('parentDirLinkBox');
+    parentDirLinkBox.style.display = 'none';
 }
 
 // Adds a div that contains all contents under the breadcrumb
